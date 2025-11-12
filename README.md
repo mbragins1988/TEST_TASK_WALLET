@@ -51,16 +51,15 @@ http://127.0.0.1:8000/
 - ✅ Просмотр баланса кошелька - GET http://127.0.0.1:8000/api/v1/wallets/{id}
 - ✅ Пополнение (DEPOSIT) / Списание средств (WITHDRAW) с кошелька  - POST http://127.0.0.1:8000/api/v1/wallets/{id}/operation/
 
-
 #### Пример запроса операции пополнения:
-```json
+
 {
   "operation_type": "DEPOSIT",
   "amount": "1000.00"
 }
 
 #### Пример запроса операции снятия средств:
-```json
+
 {
   "operation_type": "WITHDRAW",
   "amount": "100.00"
@@ -92,4 +91,5 @@ docker-compose exec web python manage.py test
 - Docker & Docker Compose
 
 ### Авторы проекта
+
 Михаил Брагин
